@@ -6,7 +6,7 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/tlo.jpg') no-repeat center top;
+    background: url('../img/tlo.jpg') no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -33,7 +33,7 @@ p {
 
 hr {
     max-width: 400px;
-    border-color: #999999;
+    border-color: #468EB8;
 }
 
 .brand,
@@ -78,12 +78,14 @@ hr {
 .brand-name {
     margin: 0;
     font-size: 4em;
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", serif;
+    font-style: italic;
 }
 
 .tagline-divider {
     margin: 15px auto 3px;
-    max-width: 250px;
-    border-color: #999999;
+    max-width: 280px;
+    border-color: #468EB8;
 }
 
 .box {
@@ -112,7 +114,9 @@ hr {
 }
 
 .text-red {
-    color: #DF000E !important;
+    color: #DF000E;
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", serif;
+    font-style: italic;
 }
 
 .grow {
@@ -121,12 +125,13 @@ hr {
 
 .grow:hover {
     transform: scale(1.1);
+    transform-origin: center center;
 }
 
 
 footer {
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    background: #95CAEA;
+
 }
 
 footer p {
@@ -210,4 +215,45 @@ footer p {
         display: table;
         clear: both;
     }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 991px) {
+    .navbar-default .navbar-nav>li>a {
+        padding: 15px 5px 15px 5px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+
+    .nav>li .grow>a{
+        padding: 15px 4px 15px 4px;
+    }
+
+    .navbar .navbar-default .container {
+        padding: 0 !important;
+    }
+}
+
+.box_market {
+    background: linear-gradient(#273E88, #6373AF);
+    background-size: cover;
+    padding-bottom: 5px;
+}
+
+.box_market p{
+    color: #fff;
+}
+
+.box_market a {
+    color: #1b306e;
+}
+
+.box_header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(255, 245, 0);
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Trebuchet MS", serif;
+    text-transform: uppercase;
 }
