@@ -6,7 +6,7 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/tlo.jpg') no-repeat center center;
+    background: url('../img/tlo.jpg') no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -112,7 +112,7 @@ hr {
 }
 
 .text-red {
-    color: #DF000E;
+    color: #DF000E !important;
 }
 
 .grow {
