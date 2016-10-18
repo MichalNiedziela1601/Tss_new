@@ -78,12 +78,14 @@ hr {
 .brand-name {
     margin: 0;
     font-size: 4em;
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", serif;
+    font-style: italic;
 }
 
 .tagline-divider {
     margin: 15px auto 3px;
-    max-width: 250px;
-    border-color: #999999;
+    max-width: 280px;
+    border-color: #468EB8;
 }
 
 .box {
@@ -113,6 +115,8 @@ hr {
 
 .text-red {
     color: #DF000E !important;
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", serif;
+    font-style: italic;
 }
 
 .grow {
@@ -125,8 +129,8 @@ hr {
 
 
 footer {
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    background: #95CAEA;
+
 }
 
 footer p {
