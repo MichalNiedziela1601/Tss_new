@@ -238,6 +238,9 @@ footer p {
     background: linear-gradient(#273E88, #6373AF);
     background-size: cover;
     padding-bottom: 5px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 8px solid #95CAEA;
 }
 
 .box_market p{
