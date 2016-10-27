@@ -314,3 +314,19 @@ ul.tabs li.current{
     padding: 2px 0 2px 0;
 
 }
+
+.top-m-1 {
+    margin-top: 10px;
+}
+
+.top-m-2 {
+    margin-top: 20px;
+}
+
+.box_branch {
+    float: left;
+    padding: 10px auto 10px 40px;
+    text-align: left;
+    color: #fff;
+    font-weight: 600;
+}
