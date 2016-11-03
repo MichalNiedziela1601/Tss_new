@@ -153,6 +153,7 @@ footer p {
 }
 
 @media screen and (min-width:768px) {
+
     .brand {
         display: inherit;
         margin: 0;
@@ -237,6 +238,13 @@ footer p {
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px){
+    #bs-example-navbar-collapse-1{
+        font-size: 0.6em;
+
+    }
+    #bs-example-navbar-collapse-1 a {
+        padding: 15px 7px 15px 7px;
+    }
 
     .nav>li .grow>a{
         padding: 15px 4px 15px 4px;
@@ -244,6 +252,14 @@ footer p {
 
     .navbar .navbar-default .container {
         padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .container {
+        width: 100%;
+        display: block;
+        padding-right: 0;
     }
 }
 
@@ -300,6 +316,10 @@ ul.tabs li.current{
     color: #222;
 }
 
+ul.nav.nav-tabs.nav-justified {
+    cursor: pointer;
+}
+
 .tab-content{
     display: none;
 
@@ -324,7 +344,7 @@ ul.tabs li.current{
 }
 
 .box_branch {
-    float: left;
+
     padding: 10px auto 10px 40px;
     text-align: left;
     color: #fff;
