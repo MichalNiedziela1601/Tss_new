@@ -36,6 +36,15 @@ hr {
     border-color: #468EB8;
 }
 
+a {
+    color: #EDF7FE;
+}
+
+a:hover {
+    color: #62A8D6;
+    background-color: white;
+}
+
 .brand,
 .address-bar {
     display: none;
@@ -109,11 +118,18 @@ hr {
 
 }
 
+.img-res {
+    display: inline-block;
+    max-width:100%;
+    height: auto;
+}
+
 .intro-text {
     text-transform: uppercase;
     font-size: 1.25em;
     font-weight: 400;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .img-border {
