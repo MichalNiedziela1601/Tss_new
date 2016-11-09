@@ -51,7 +51,7 @@
                 <span class="icon-bar"></span>
             </button>
             <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-            <a class="navbar-brand" href="index.html">Business Casual</a>
+            <a class="navbar-brand text-red" href="index.html">TSS Społem</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -85,8 +85,8 @@
         <div class="box">
             <div class="col-lg-12">
                 <hr>
-                <h2 class="intro-text text-center">Contact
-                    <strong>business casual</strong>
+                <h2 class="intro-text text-center">
+                    <strong>Kontakt</strong>
                 </h2>
                 <hr>
             </div>
@@ -97,81 +97,101 @@
 
                 <div id="map" style="width: 100%; height: 400px;"></div>
                 <script>
-                    function initMap() {
-                        var uluru = {lat: -25.363, lng: 131.044};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 4,
-                            center: new GLatLng(50.059327, 20.944634),
-                        });
-                        var marker = new google.maps.Marker({
-                            position: uluru,
-                            map: map
-                        });
+                    var locations = [
+                        ['Centrum Handlowe Bazar', 50.015643, 20.958961],
+                        ['Centrum Handlowe Hala Tuchowska', 49.998558, 20.985871],
+                        ['Centrum Handlowe Dąbrówka', 49.999332, 20.917561],
+                        ['Centrum Handlowe W Galerii Żabno', 50.123575, 20.890263]
+                    ];
 
-                        var marker2 = new google.maps.Marker({
-                            position: {lat: 49.998617, lng: 20.985950},
-                            map: map
-                        })
+                    function setMarkers(map) {
+                        var image = '/Tss_new/img/ikona_mapa.jpg';
+                        for (var i = 0; i < locations.length; i++) {
+                            var market = locations[i];
+                            var marker = new google.maps.Marker({
+                                position: {lat: market[1], lng: market[2]},
+                                map: map,
+                                icon: image,
+                                title: market[0]
+                            })
+                        }
+                    }
+
+                    function initMap() {
+
+                        var center = {lat: 50.059327, lng: 20.944634};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 11,
+                            center: center
+                        });
+                        setMarkers(map);
                     }
                 </script>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkveYh2nyKzxraLI6mu_DqtQic4fcA5eQ&callback=initMap"
-                type="text/javascript"></script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkveYh2nyKzxraLI6mu_DqtQic4fcA5eQ&callback=initMap"
+                        type="text/javascript"></script>
             </div>
             <div class="col-md-4">
-                <p>Phone:
-                    <strong>123.456.7890</strong>
-                </p>
-                <p>Email:
-                    <strong><a href="mailto:name@example.com">name@example.com</a></strong>
-                </p>
-                <p>Address:
-                    <strong>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</strong>
-                </p>
+                <small><p><strong>Siedziba:</strong></p>
+                    <p>ul. Tuchowska 23</p>
+                    <p><strong>Sekretariat:</strong></p>
+                    <p>tel. 14 626 83 63</p>
+                    <p>14 626 84 45</p>
+                    <p>fax: 14 626 86 85</p>
+                    <p><a href="mailto:biuro@tss.tarnow.pl">biuro@tss.tarnow.pl</a></p>
+
+                    <p><strong>Prezes Zarządu:</strong></p>
+                    <p>tel. 14 626 83 63</p>
+
+                    <p><strong>Z-ca Prezesa:</strong></p>
+                    <p>tel. 14 626 84 45</p>
+
+
+
+                </small>
             </div>
             <div class="clearfix"></div>
+            <div class="col-md-4 top-m-1">
+                <small>
+                    <p><strong>Kadry:</strong></p>
+                    <p>tel. 14 626 86 81</p>
+                    <p><a href="mailto:sekcja_ogolna@tss.tarnow.pl">sekcja_ogolna@tss.tarnow.pl</a> </p>
+
+                    <p><strong>Administracja</strong>:</p>
+                    <p>tel. 14 626 83 29</p>
+                    <p><a href="mailto:administracja@tss.tarnow.pl">administracja@tss.tarnow.pl</a></p>
+
+                    <p><strong>Marketing:</strong></p>
+                    <p><a href="mailto: marketing@tss.tarnow.pl"> marketing@tss.tarnow.pl</a> </p>
+                </small>
+            </div>
+
+            <div class="col-md-4 top-m-1">
+                <small>
+                    <p><strong>Księgowość:</strong></p>
+                    <p>tel. 14 626 82 59</p>
+                        <p>tel. 14 626 88 82</p>
+
+                    <p><strong>Finanse:</strong></p>
+                    <p>tel. 14 626 85 92</p>
+
+                    <p><strong>Kasa:</strong></p>
+                    <p>tel. 14 626 89 35</p>
+                </small>
+            </div>
+
+            <div class="col-md-4 top-m-1">
+                <small>
+                    <p><strong>Detal:</strong></p>
+                    <p>tel. 14 626 86 09</p>
+                    <p>fax: 14 626 84 85</p>
+                    <p><a href="mailto:detal@tss.tarnow.pl">detal@tss.tarnow.pl</a></p>
+                </small>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="box">
-            <div class="col-lg-12">
-                <hr>
-                <h2 class="intro-text text-center">Contact
-                    <strong>form</strong>
-                </h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus
-                    repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum
-                    sapiente optio deleniti consequuntur eos voluptatem.</p>
-                <form role="form">
-                    <div class="row">
-                        <div class="form-group col-lg-4">
-                            <label>Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-lg-4">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control">
-                        </div>
-                        <div class="form-group col-lg-4">
-                            <label>Phone Number</label>
-                            <input type="tel" class="form-control">
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="form-group col-lg-12">
-                            <label>Message</label>
-                            <textarea class="form-control" rows="6"></textarea>
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <input type="hidden" name="save" value="contact">
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+
 
 </div>
 <!-- /.container -->
@@ -191,8 +211,6 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-
-
 
 
 </body>
